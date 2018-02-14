@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  # root to: 'pages#index'
+  root to: 'products#index'
   # post '/', to: "pages#create"
   resources :products, only: [:index, :create]
 
