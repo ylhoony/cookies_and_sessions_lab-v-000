@@ -4,4 +4,8 @@ class ProductsController < ApplicationController
 
   end
 
+  def create
+    cart << params[:product]
+  end
+
 end
