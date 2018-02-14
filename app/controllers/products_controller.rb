@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   end
 
   def create
+    binding.pry
     cart << params[:product]
   end
 
