@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
   def create
     binding.pry
     cart << params[:product]
+    redirect_to :index
   end
 
 end
