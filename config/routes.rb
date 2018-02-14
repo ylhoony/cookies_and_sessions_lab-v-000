@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   root to: 'pages#index'
+  post '/', to: "pages#create"
   resources :products, only: [:index]
 
   # The priority is based upon order of creation: first created -> highest priority.
