@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  root to: 'pages#index'
+  # root to: 'pages#index'
   post '/', to: "pages#create"
-  resources :products, only: [:index]
+  resources :products, only: [:index, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
