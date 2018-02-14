@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def create
-    binding.pry
+    # binding.pry
     session[:cart] << params[:product]
 
   end
